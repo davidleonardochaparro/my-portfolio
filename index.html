@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" type="image/png" href="./Page logo B.png" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-success" id="site-navbar">
+        <div class="container-fluid" id="uw-nav">
+            <a class="navbar-brand ms-4 fs-3 text-light fw-light fst-italic" href="#">David Leonardo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-4 pe-4 fs-5">
+                    <a class="nav-link text-light fw-semibold active" aria-current="page" href="#hero">Hero</a>
+                    <a class="nav-link text-light fw-semibold" href="#about-me">About me</a>
+                    <a class="nav-link text-light fw-semibold" href="#expertise">Expertise</a>
+                    <a class="nav-link text-light fw-semibold" href="#projects">Projects</a>
+                    <!-- <a class="nav-link text-light fw-semibold" href="#">Recomendations</a> -->
+                    <a class="nav-link text-light fw-semibold" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-success-subtle pt-5 pb-5 overflow-x-auto" id="hero">
+        <div class="container text-center ps-md-5s mx-auto translate-right-md "> <!--me-md-5-->
+            <div class="row ">
+                <div
+                    class="col rounded-pill rounded-end-circle border border-end-0 border-5 border-success bg-light rounded-pill d-md-flex flex-md-column justify-content-md-center d-flex flex-column justify-content-end  ms-md-5 ps-md-5">
+                    <!--p-5-->
+                    <h1 class="hero-title display-4 mt-5 pt-4 ps-4 ms-5 fw-semibold w-75 mx-auto">Mechatronics Engineer</h1>
+                    <figure>
+                        <blockquote class="blockquote fs-3">
+                            <p>Developer driving robotics innovation</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer fs-5 mb-0">
+                            Building with ownership
+                            <cite title="Source Title">seeking for mastery</cite>
+                        </figcaption>
+                    </figure>
+                    <p class="lead fs-4 mb-5 pb-4 w-75 mx-auto ps-md-0 ps-4">
+                        My journey began with a collision in the universe of robotics, then
+                        ventured across the AI galaxy. From there, life guided me towards
+                        the vast world of full-stack development &mdash; and I love being
+                        part of this boundless Milky Way.
+                    </p>
+                </div>
+                <div class="col p-0">
+                    <div class="container-fluid-sm d-flex flex-row justify-content-start align-items-start overflow-x-auto"
+                        style="height:600px;">
+                        <img src="./photo.png"
+                            class="rounded-pill rounded-start-circle border border-start-0 border-5 border-success bg-light h-100"
+                            alt="Image of myself" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-success" id="about-me">
+        <div class="row d-md-flex flex-md-row d-flex flex-column">
+
+            <div class="col order-md-1 order-2 d-md-flex flex-md-row justify-content-md-end p-md-0 about-video-column">
+                <iframe src="https://www.youtube.com/embed/bqTrTzlrAAU"
+                    class="about-video object-fit-cover p-md-3 m-md-4 me-md-0 mw-100 rounded-5 p-2 mt-4 ms-1 shadow-lg bg-success-subtle"
+                    title="Introducing David Leonardo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <video src="./Introducing-me.mp4"
+                    class="object-fit-cover p-md-3 m-md-4 me-md-0 mw-100 rounded-5 p-2 mt-4 ms-1 shadow-lg bg-success-subtle"
+                    style="height: 93%;" controls></video> -->
+
+            </div>
+
+            <div
+                class="col-md-6 order-md-2 order-1 d-md-flex flex-md-column justify-content-md-center text-md-start text-center">
+                <h1 class="display-1 text-white w-75 mx-md-0 mx-auto ms-md-5 mt-4" id="about-me-text">Get to know me beyond my hard
+                    skills...</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-center pb-2" id="expertise">
+        <div class="row w-75 mx-auto mb-md-0 mb-4" id="uw-screensA">
+            <div class="col pb-md-4">
+                <h1 class="display-2 fw-semibold text-success mt-md-4 mt-4">Proficency</h1>
+                <hr class="border border-success border-3 opacity-50 w-50 mx-auto" />
+                <h3 class="fw-light fst-italic">
+                    Where my competence
+                    <small class="text-body-secondary">nests</small>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row w-75 mx-auto d-md-flex flex-md-row flex-column mb-md-5" id="uw-screensB">
+            <div class="col">
+                <img src="./robotics-logo.svg" alt="Robotics logo." width="120" height="120" id="logoA">
+                <h3>
+                    Robotics
+                    <small class="text-body-secondary">platforms</small>
+                </h3>
+
+                <ul class="dots w-80 text-start lead fw-normal mt-md-4 ms-md-5 ps-md-5 mt-4">
+                    <li>ROS 1/ROS 2 simulations.</li>
+                    <li>SCARA and Kinova robot solutions.</li>
+                    <li>SolidWorks CAD and RVIZ models.</li>
+                    <li>ESP32 and STM microcontrollers.</li>
+                    <li>Unity, CoppeliaSim, Gazebo and Matlab simulations.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="./ai-logo.svg" alt="AI logo." width="120" height="120" id="logoB">
+                <h3>
+                    AI
+                    <small class="text-body-secondary">engineering</small>
+                </h3>
+
+                <ul class="dots w-80 text-start lead fw-normal mt-md-4 ms-md-5 ps-md-5 mt-4">
+                    <li>CNN networks implementations in Matlab.</li>
+                    <li>Voice and face recognition models.</li>
+                    <li>Machine learning integration.</li>
+                    <li>Scikit-learn Python library for applied models on data analysis.</li>
+                </ul>
+            </div>
+            <div class="col">
+
+                <img src="./dev-logo.svg" alt="AI logo." width="120" height="120" id="logoC">
+                <h3>
+                    Full-Stack
+                    <small class="text-body-secondary">development</small>
+                </h3>
+                <ul class="dots w-80 text-start lead fw-normal mt-md-4 ms-md-5 ps-md-5  mt-4">
+                    <li>HTML, CSS, Bootstrap and JS.</li>
+                    <li>Typescript and Vite.</li>
+                    <li>Zoho Catalyst to develop a complete enterprise level SaaS.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center bg-success-subtle pt-md-5 pb-md-5 py-4" id="projects">
+        <div class="row mt-md-0 pt-md-2 mx-auto bg-light border border-success border-bottom-0 border-5" id="uw-carouselA"
+            style="width:95%;">
+            <div class="col text-black">
+                <h1>Some of my <span class="badge text-bg-success">Masterpieces</span></h1>
+            </div>
+        </div>
+        <div class="row mb-md-0 mx-auto border border-success border-top-0 border-5" style="width:95%;" id="uw-carouselB">
+            <div class="col p-0" style="height:648px">
+                <div id="carouselExampleCaptions" class="carousel slide h-100">
+                    <div class="carousel-indicators mx-auto mb-md-5 mb-5" style="width: 50%;">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button> -->
+                    </div>
+                    <div class="carousel-inner h-100 bg-light">
+                        <div class="carousel-item active h-100">
+                            <iframe src="https://www.youtube.com/embed/q_jFLWX4XIY"
+                                class="object-fit-cover mw-100 h-100 w-75" id="robotA-vid"
+                                title="Stair climbing robot" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <!-- <video src="https://github.com/davidleonardochaparro/My-Portfolio/releases/download/v1.0-video/Stair-climbing-robot.mp4" class="object-fit-cover mw-100 h-100"
+                                controls></video> -->
+                            <div class="carousel-caption top-0 mx-auto h-25" id="captionA" style="width:30%;">
+                                <h5 class="mb-0">Autonomous mobile robot</h5>
+                                <p>Capable to transport a 5kg load.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <iframe src="https://www.youtube.com/embed/oCsILuy9njQ"
+                                class="object-fit-cover mw-100 h-100 w-75" id="robotB-vid"
+                                title="SCARA controlled by CNN" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <!-- <video src="./SCARA-CNN.mp4" class="object-fit-cover mw-100 h-100" controls></video> -->
+                            <div class="carousel-caption top-0 mx-auto h-25 pt-md-0 pt-0" id="captionB" style="width:50%;">
+                                <h5>SCARA robot with voice and image recognition with CNN</h5>
+                                <p id="carousel-captionB-paragraph">Voice recognition model to tell the robot which
+                                    conveyor must choose.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="carousel-item h-100">
+                            <video src="./Introducing-me.mp4" class="object-fit-cover mw-100 h-100"
+                                controls></video>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Enterprise CRM</h5>
+                                <p>Crafted from scratch with the research and development team.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev my-auto" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" data-bs-theme="dark"
+                        style="width:12%; height:25%;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next my-auto" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next" data-bs-theme="dark"
+                        style="width:12%; height:25%;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center" id="contact">
+
+        <div
+            class="row pb-4 shadow-sm border border-5 border-top-0 border-start-0 border-end-0 border-success rounded-circle mx-auto" id="contact-rowA">
+            <div class="col text-success pt-md-5 pt-4 pb-3 pb-md-0">
+                <h1 class="display-6 fw-semibold">Let's build something great together</h1>
+                <p class="lead text-black fs-4">Available for startups, projects, and work on any of my <a
+                        class="icon-link icon-link-hover"
+                        style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);--bs-link-hover-color-rgb: 25, 135, 84;"
+                        href="#expertise">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                        </svg>
+                        specialities
+                    </a>.</p>
+            </div>
+        </div>
+
+        <div class="row contact-layout d-md-flex flex-md-row d-flex flex-column mx-auto" id="contact-rowB">
+
+            <div class="col-auto bg-light">
+            </div>
+
+            <!-- position-relative -->
+            <div class="col rounded-5 contact-methods d-md-flex flex-md-column justify-content-md-start align-items-md-center gap-md-5 d-flex flex-column justify-content-center align-items-center mt-md-0 mt-4 mb-md-0 mb-3"
+                style="height: 550px;">
+                <!-- position-absolute top-0 start-50 translate-middle-x -->
+                <p class="display-6 mt-md-5">Reach me out on</p>
+                <a href="https://www.linkedin.com/in/david-leonardo-chaparro-rodriguez-549aa0351/" class="w-25"
+                    id="linkedin" target="_blank">
+                    <button type="button"
+                        class="btn w-100 btn-outline-primary rounded-pill fs-3 d-inline-flex align-items-center gap-0 justify-content-center">
+                        <span class="fw-bold">Linked</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </button>
+                </a>
+                <!-- position-absolute -->
+                <p class="fs-3">or</p>
+                <button type="button"
+                    class="btn w-25 btn-outline-success rounded-pill fs-3 d-inline-flex align-items-center gap-0 justify-content-center"
+                    id="mail-button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right"
+                    data-bs-custom-class="popover-success" data-bs-title="Email address" data-bs-content='<div class="d-flex align-items-center gap-3">
+                                            <span>davidlr.626@gmail.com</span> 
+                                            <button type="button" class="btn btn-sm btn-success copy-email" aria-label="Copy email address">Copy</button>
+                                        </div>'>
+                    <span class="fw-semibold">Mail</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-envelope-at" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                        <path
+                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="col-auto d-md-flex flex-md-column justify-content-md-center">
+                <div class="vr text-success opacity-100 h-75"></div>
+            </div>
+
+            <!-- position-relative -->
+            <div
+                class="col rounded-5 contact-form-column d-md-flex d-flex flex-md-column flex-column justify-content-md-start justify-content-start align-items-md-center align-items-center gap-md-3">
+                <!-- position-absolut top-0 start-50 translate-middle-x -->
+                <p class="display-6 w-75 mt-md-4 mt-2">
+                    Quick message directly to my inbox
+                </p>
+
+                <form class="row g-4 needs-validation" novalidate style="width: 85%;">
+                    <div class="col-md-6 form-floating">
+                        <input type="text" class="form-control" id="inputName" placeholder="David" required>
+                        <label class="ms-2 ps-3 text-success" for="inputName">Name</label>
+                        <div class="invalid-feedback">Please don't leave this empty.</div>
+                    </div>
+                    <div class="col-md-6 form-floating">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com"
+                            required>
+                        <label class="ms-2 ps-3 text-success" for="inputEmail">Email</label>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="col-12 form-floating">
+                        <input type="text" class="form-control" id="inputSubject" placeholder="Project" required>
+                        <label class="ms-2 ps-3 text-success" for="inputSubject">Subject</label>
+                        <div class="invalid-feedback">Please don't leave this empty.</div>
+                    </div>
+                    <div class="col-12 form-floating" style="height: 30%;">
+                        <textarea class="form-control" placeholder="Love to work with you." id="floatingTextarea"
+                            style="height: 100%;" required></textarea>
+                        <label class="ms-2 ps-3 text-success" for="floatingTextarea">Message</label>
+                        <div class="invalid-feedback">Please don't leave this empty.</div>
+                    </div>
+                    <div class="col-12">
+
+                        <button type="submit" class="btn btn-outline-success fw-medium" id="submit-button"
+                            style="width: 25%;">Submit</button>
+
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <!-- <img src="./green-bg.jpg" class="rounded me-2" alt="green."> -->
+                                    <strong class="me-auto">Amazing!</strong>
+                                    <small>Now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    You have made contact with an amazing person if I say so myself :).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-auto bg-light">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid contact-map" style="height: 300px;" id="uw-map">
+        <div class="row">
+            <div class="col p-0">
+                <div id="map" style="width: 100%;height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="card text-center">
+            <div class="card-footer text-body-secondary p-4">
+                © 2026 David Leonardo Chaparro Rodríguez. All rights reserved.
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const siteNavbar = document.querySelector("#site-navbar");
+        let hideNavbarTimer;
+        let isNavbarHovered = false;
+
+        function hideNavbarAfterInactivity() {
+            clearTimeout(hideNavbarTimer);
+
+            if (window.scrollY <= 70 || isNavbarHovered) {
+                return;
+            }
+
+            hideNavbarTimer = setTimeout(() => {
+                siteNavbar.classList.add("navbar-hidden");
+            }, 1000);
+        }
+
+        function showNavbarWhileScrolling() {
+            siteNavbar.classList.remove("navbar-hidden");
+            hideNavbarAfterInactivity();
+        }
+
+        window.addEventListener("scroll", showNavbarWhileScrolling, { passive: true });
+        siteNavbar.addEventListener("mouseenter", () => {
+            isNavbarHovered = true;
+            clearTimeout(hideNavbarTimer);
+            siteNavbar.classList.remove("navbar-hidden");
+        });
+        siteNavbar.addEventListener("mouseleave", () => {
+            isNavbarHovered = false;
+            hideNavbarAfterInactivity();
+        });
+
+        const mailButton = document.querySelector('[data-bs-toggle="popover"]');
+
+        new bootstrap.Popover(mailButton, {
+            container: "body",
+            placement: () => window.matchMedia("(max-width: 767.98px)").matches
+                ? "bottom"
+                : "right",
+            fallbackPlacements: [],
+            html: true,
+            sanitize: false
+        });
+
+        document.addEventListener("click", async (event) => {
+            if (!event.target.matches(".copy-email")) {
+                return;
+            }
+
+            await navigator.clipboard.writeText("davidlr.626@gmail.com");
+            event.target.textContent = "Copied!";
+        });
+    </script>
+    <script>
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+            const toastLiveExample = document.getElementById('liveToast')
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        event.preventDefault()
+                        toastBootstrap.show()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        const map = L.map("map", {
+            minZoom: 1,
+            maxZoom: 18
+        }).setView([2, -70], 3);
+
+        const noLabelsLayer = L.tileLayer(
+            "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            {
+                attribution: "Tiles &copy; Esri",
+                maxZoom: 1
+            }
+        );
+
+        const labelsLayer = L.tileLayer(
+            "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+            {
+                attribution: "Tiles &copy; Esri",
+                minZoom: 2,
+                maxZoom: 18
+            }
+        );
+
+        function updateMapLayer() {
+            const layer = map.getZoom() < 2 ? noLabelsLayer : labelsLayer;
+
+            if (!map.hasLayer(layer)) {
+                map.eachLayer(currentLayer => {
+                    if (currentLayer === noLabelsLayer || currentLayer === labelsLayer) {
+                        map.removeLayer(currentLayer);
+                    }
+                });
+
+                layer.addTo(map);
+            }
+        }
+
+        updateMapLayer();
+        map.on("zoomend", updateMapLayer);
+
+        L.marker([4.711, -74.072])
+            .addTo(map)
+            .bindPopup("My location");
+    </script>
+</body>
+
+</html>
