@@ -1,37 +1,81 @@
 const siteNavbar = document.querySelector("#site-navbar");
+const navCollapse = document.querySelector("#navbarNavAltMarkup");
+const navToggler = document.querySelector(".navbar-toggler");
+const navLinks = document.querySelectorAll(".nav-link");
+
 let hideNavbarTimer;
 let isNavbarHovered = false;
 
-function hideNavbarAfterInactivity() {
+function clearHideTimer() {
     clearTimeout(hideNavbarTimer);
+}
 
-    if (window.scrollY <= 70 || isNavbarHovered) {
+function showNavbar() {
+    siteNavbar.classList.remove("navbar-hidden");
+}
+
+function hideNavbarAfterInactivity() {
+    clearHideTimer();
+
+    if (isNavbarHovered || window.scrollY <= 70) {
         return;
     }
 
     hideNavbarTimer = setTimeout(() => {
         siteNavbar.classList.add("navbar-hidden");
-    }, 1000);
+    }, 1500);
 }
 
-function showNavbarWhileScrolling() {
-    siteNavbar.classList.remove("navbar-hidden");
+function handleScroll() {
+    showNavbar();
+
+    if (window.scrollY <= 70) {
+        clearHideTimer();
+        return;
+    }
+
     hideNavbarAfterInactivity();
 }
 
-window.addEventListener("scroll", showNavbarWhileScrolling, { passive: true });
+window.addEventListener("scroll", handleScroll, { passive: true });
+
 siteNavbar.addEventListener("mouseenter", () => {
     isNavbarHovered = true;
-    clearTimeout(hideNavbarTimer);
-    siteNavbar.classList.remove("navbar-hidden");
+    clearHideTimer();
+    showNavbar();
 });
+
 siteNavbar.addEventListener("mouseleave", () => {
     isNavbarHovered = false;
     hideNavbarAfterInactivity();
 });
 
-const mailButton = document.querySelector('[data-bs-toggle="popover"]');
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        showNavbar();
+        clearHideTimer();
 
+        if (navCollapse && navCollapse.classList.contains("show")) {
+            navCollapse.classList.remove("show");
+        }
+
+        if (navToggler) {
+            navToggler.classList.add("collapsed");
+            navToggler.setAttribute("aria-expanded", "false");
+        }
+
+        if (window.scrollY > 70) {
+            hideNavbarAfterInactivity();
+        }
+    });
+});
+
+window.addEventListener("load", () => {
+    showNavbar();
+    handleScroll();
+});
+
+const mailButton = document.querySelector('[data-bs-toggle="popover"]');
 new bootstrap.Popover(mailButton, {
     container: "body",
     placement: () => window.matchMedia("(max-width: 767.98px)").matches
