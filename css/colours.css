@@ -1,0 +1,23 @@
+.navbar-gradient {
+    background: linear-gradient(to right, var(--bs-green-700),var(--bs-green-500),var(--bs-green-600));
+}
+
+.hero-gradient {
+    background: radial-gradient(var(--bs-green-200), var(--bs-green-100));
+}
+
+.intro-gradient {
+    background: radial-gradient(at 0% 30%, var(--bs-green-400), var(--bs-green-500) 30%, var(--bs-green-600) 50%);
+}
+
+/* Expertise section */
+.text-effect {
+    text-shadow:
+    3px 3px 5px #00000080;
+}
+
+.horizontal-row-color {
+    border-color: var(--bs-green-700);
+    border-width: 1.1vh;
+}
+

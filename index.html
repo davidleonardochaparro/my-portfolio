@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/colours.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="icon" type="image/png" href="./page-logo.png" />
+    <link rel="icon" type="image/png" href="./assets/page-logo.png" />
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-success" id="site-navbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-gradient" id="site-navbar">
         <div class="container-fluid" id="uw-nav">
             <a class="navbar-brand ms-4 fs-3 text-light fw-light fst-italic" href="#">David Leonardo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -34,7 +35,8 @@
         </div>
     </nav>
 
-    <div class="container-fluid bg-success-subtle pt-5 pb-5 overflow-x-auto" id="hero">
+    <!-- Hero section -->
+    <div class="container-fluid hero-gradient pt-5 pb-5 overflow-x-auto" id="hero">
         <div class="container text-center ps-md-5s mx-auto translate-right-md "> <!--me-md-5-->
             <div class="row ">
                 <div
@@ -59,8 +61,8 @@
                 </div>
                 <div class="col p-0">
                     <div class="container-fluid-sm d-flex flex-row justify-content-start align-items-start overflow-x-auto"
-                        style="height:600px;">
-                        <img src="./photo.png"
+                        style="height:600px;"> <!-- Look for this height in viewport height -->
+                        <img src="./assets/photo.png"
                             class="rounded-pill rounded-start-circle border border-start-0 border-5 border-success bg-light h-100"
                             alt="Image of myself" />
 
@@ -68,10 +70,10 @@
                 </div>
             </div>
         </div>
-
     </div>
 
-    <div class="container-fluid bg-success" id="about-me">
+    <!-- About me section -->
+    <div class="container-fluid intro-gradient" id="about-me">
         <div class="row d-md-flex flex-md-row d-flex flex-column">
 
             <div class="col order-md-1 order-2 d-md-flex flex-md-row justify-content-md-end p-md-0 about-video-column">
@@ -81,7 +83,6 @@
                 <!-- <video src="./Introducing-me.mp4"
                     class="object-fit-cover p-md-3 m-md-4 me-md-0 mw-100 rounded-5 p-2 mt-4 ms-1 shadow-lg bg-success-subtle"
                     style="height: 93%;" controls></video> -->
-
             </div>
 
             <div
@@ -93,12 +94,12 @@
         </div>
     </div>
 
-
+    <!-- Skills and expertise section -->
     <div class="container-fluid text-center pb-2" id="expertise">
         <div class="row w-75 mx-auto mb-md-0 mb-4" id="uw-screensA">
             <div class="col pb-md-4">
-                <h1 class="display-2 fw-semibold text-success mt-md-4 mt-4">Proficency</h1>
-                <hr class="border border-success border-3 opacity-50 w-50 mx-auto" />
+                <h1 class="display-2 fw-semibold text-success text-effect mt-md-4 mt-4">Proficency</h1>
+                <hr class="horizontal-row-color opacity-50 w-50 mx-auto" />
                 <h3 class="fw-light fst-italic">
                     Where my competence
                     <small class="text-body-secondary">nests</small>
@@ -108,7 +109,7 @@
 
         <div class="row w-75 mx-auto d-md-flex flex-md-row flex-column mb-md-5" id="uw-screensB">
             <div class="col">
-                <img src="./robotics-logo.svg" alt="Robotics logo." width="120" height="120" id="logoA">
+                <img src="./assets/robotics-logo.svg" alt="Robotics logo." width="120" height="120" id="logoA">
                 <h3>
                     Robotics
                     <small class="text-body-secondary">platforms</small>
@@ -123,7 +124,7 @@
                 </ul>
             </div>
             <div class="col">
-                <img src="./ai-logo.svg" alt="AI logo." width="120" height="120" id="logoB">
+                <img src="./assets/ai-logo.svg" alt="AI logo." width="120" height="120" id="logoB">
                 <h3>
                     AI
                     <small class="text-body-secondary">engineering</small>
@@ -138,7 +139,7 @@
             </div>
             <div class="col">
 
-                <img src="./dev-logo.svg" alt="AI logo." width="120" height="120" id="logoC">
+                <img src="./assets/dev-logo.svg" alt="AI logo." width="120" height="120" id="logoC">
                 <h3>
                     Full-Stack
                     <small class="text-body-secondary">development</small>
@@ -152,6 +153,7 @@
         </div>
     </div>
 
+    <!-- Carousel and main projects section -->
     <div class="container-fluid text-center bg-success-subtle pt-md-5 pb-md-5 py-4" id="projects">
         <div class="row mt-md-0 pt-md-2 mx-auto bg-light border border-success border-bottom-0 border-5" id="uw-carouselA"
             style="width:95%;">
@@ -219,8 +221,8 @@
         </div>
     </div>
 
+    <!-- Contact section -->
     <div class="container-fluid text-center" id="contact">
-
         <div
             class="row pb-4 shadow-sm border border-5 border-top-0 border-start-0 border-end-0 border-success rounded-circle mx-auto" id="contact-rowA">
             <div class="col text-success pt-md-5 pt-4 pb-3 pb-md-0">
@@ -358,6 +360,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <div class="container-fluid p-0">
         <div class="card text-center">
             <div class="card-footer text-body-secondary p-4">
@@ -371,131 +374,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
-
-    <script>
-        const siteNavbar = document.querySelector("#site-navbar");
-        let hideNavbarTimer;
-        let isNavbarHovered = false;
-
-        function hideNavbarAfterInactivity() {
-            clearTimeout(hideNavbarTimer);
-
-            if (window.scrollY <= 70 || isNavbarHovered) {
-                return;
-            }
-
-            hideNavbarTimer = setTimeout(() => {
-                siteNavbar.classList.add("navbar-hidden");
-            }, 1000);
-        }
-
-        function showNavbarWhileScrolling() {
-            siteNavbar.classList.remove("navbar-hidden");
-            hideNavbarAfterInactivity();
-        }
-
-        window.addEventListener("scroll", showNavbarWhileScrolling, { passive: true });
-        siteNavbar.addEventListener("mouseenter", () => {
-            isNavbarHovered = true;
-            clearTimeout(hideNavbarTimer);
-            siteNavbar.classList.remove("navbar-hidden");
-        });
-        siteNavbar.addEventListener("mouseleave", () => {
-            isNavbarHovered = false;
-            hideNavbarAfterInactivity();
-        });
-
-        const mailButton = document.querySelector('[data-bs-toggle="popover"]');
-
-        new bootstrap.Popover(mailButton, {
-            container: "body",
-            placement: () => window.matchMedia("(max-width: 767.98px)").matches
-                ? "bottom"
-                : "right",
-            fallbackPlacements: [],
-            html: true,
-            sanitize: false
-        });
-
-        document.addEventListener("click", async (event) => {
-            if (!event.target.matches(".copy-email")) {
-                return;
-            }
-
-            await navigator.clipboard.writeText("davidlr.626@gmail.com");
-            event.target.textContent = "Copied!";
-        });
-    </script>
-    <script>
-        (() => {
-            'use strict'
-
-            const forms = document.querySelectorAll('.needs-validation')
-            const toastLiveExample = document.getElementById('liveToast')
-            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    } else {
-                        event.preventDefault()
-                        toastBootstrap.show()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
-
+    <script src="./js/navbar.js"></script>
+    <script src="./js/formValidation.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <script>
-        const map = L.map("map", {
-            minZoom: 1,
-            maxZoom: 18
-        }).setView([2, -70], 3);
-
-        const noLabelsLayer = L.tileLayer(
-            "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-            {
-                attribution: "Tiles &copy; Esri",
-                maxZoom: 1
-            }
-        );
-
-        const labelsLayer = L.tileLayer(
-            "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
-            {
-                attribution: "Tiles &copy; Esri",
-                minZoom: 2,
-                maxZoom: 18
-            }
-        );
-
-        function updateMapLayer() {
-            const layer = map.getZoom() < 2 ? noLabelsLayer : labelsLayer;
-
-            if (!map.hasLayer(layer)) {
-                map.eachLayer(currentLayer => {
-                    if (currentLayer === noLabelsLayer || currentLayer === labelsLayer) {
-                        map.removeLayer(currentLayer);
-                    }
-                });
-
-                layer.addTo(map);
-            }
-        }
-
-        updateMapLayer();
-        map.on("zoomend", updateMapLayer);
-
-        L.marker([4.711, -74.072])
-            .addTo(map)
-            .bindPopup("My location");
-    </script>
+    <script src="./js/map.js"></script>
 </body>
 
 </html>
